@@ -3,9 +3,9 @@
 
 <br/>
 <p align="center" width="100%">
-<img src=https://github.com/Team-Mutagenesis/ERP42/assets/82595288/6d1a9a84-d673-45ec-863f-3edfbaecf406 width="300" height="500"/>
+<img src=https://github.com/Team-Mutagenesis/ERP42/assets/82595288/6d1a9a84-d673-45ec-863f-3edfbaecf406 width="500" height="500"/>
 
-<img src=https://github.com/Team-Mutagenesis/ERP42/assets/82595288/afc5b37d-898e-43ff-819d-2953737c6356 width="300" height="500" />
+<img src=https://github.com/Team-Mutagenesis/ERP42/assets/82595288/afc5b37d-898e-43ff-819d-2953737c6356 width="500" height="500" />
 </p>
 
 <br/>
