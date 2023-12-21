@@ -1,0 +1,13 @@
+<launch>
+    <!--<node pkg="ts" type="gpsimu_parser.py" name="gpsimu_parser"  /> -->
+    <!--<node pkg="ts" type="global_path_pub.py" name="global_path_pub"  />-->
+    <node pkg="ts" type="local_path_pub.py" name="local_path_pub"  />
+    <node pkg="ts" type="lane_traj_mid.py" name="lane_traj_mid"  />
+    <node pkg="ts" type="cone_cluster_add_z.py" name="cone_cluster_add_z"  />
+    <node pkg="ts" type="class_final_cluster.py" name="class_final_cluster"  />
+    <node pkg="ts" type="lattice_lane.py" name="lattice_lane"  />
+    <node pkg="ts" type="lane_pursuit.py" name="lane_pursuit"  />
+    <node pkg="ts" type="tryout_only_cone.py" name="tryout_only_cone" />
+    <node pkg="ts" type="pure_pursuit.py" name="pure_pursuit"/>
+    <node pkg="ts" type="track_main.py" name="track_main" output="screen"/>
+</launch>
