@@ -1,0 +1,6 @@
+<launch>
+    <!-- <node pkg="rs" type="cone_cluster_add_z.py" name="cone_cluster_add_z" /> -->
+    <node pkg="rs" type="lidar_cluster_add_z.py" name="lidar_cluster_add_z"  />
+    <node pkg="rs" type="tryout_color_cone.py" name="tryout_color_cone"  />
+    <!-- <node pkg="rs" type="tryout_only_cone.py" name="tryout_only_cone" output='screen' /> -->
+</launch>

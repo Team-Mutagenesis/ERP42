@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="node_name" value="ublox_gps"/>
+  <arg name="param_file_name" value="zed-f9p" />
+  <arg name="output" default="screen" />
+  <arg name="respawn" default="true" />
+  <arg name="respawn_delay" default="30" />
+  <arg name="clear_params" default="true" />
+
+  <node pkg="ublox_gps" type="ublox_gps" name="$(arg node_name)"
+        output="$(arg output)" 
+        clear_params="$(arg clear_params)"
+        respawn="$(arg respawn)" 
+        respawn_delay="$(arg respawn_delay)">
+    <rosparam command="load" 
+              file="$(find ublox_gps)/config/$(arg param_file_name).yaml" />
+  </node>
+
+  <param name="utm_zone" type="int" value="52" />
+  <param name="hemisphere" type="string" value="North" />
+  <node type="utm_lla_converter" pkg="utm_lla" name="utm_lla_converter">
+  </node>
+
+  <!-- <node pkg="ntrip_ros" type="ntripclient.py" name="ntrip_ros" output="screen">
+ 	 <param name="rtcm_topic" value="/ublox_gps/rtcm"/>
+ 	 <param name="ntrip_server" value="RTS2.ngii.go.kr:2101"/>
+ 	 <param name="ntrip_user" value="thflgg133"/> 
+ 	 <param name="ntrip_pass" value="ngii"/>
+ 	 <param name="ntrip_stream" value="VRS-RTCM31"/>
+   SSR 드론/차량 -->
+   <!-- <param name="ntrip_stream" value="SSR-SSRG"/> -->
+
+   <!-- # 학교 -->
+ 	 <!-- <param name="nmea_gga" value="$GPGGA,052413.415,3646.348,N,12655.888,E,1,12,1.0,0.0,M,0.0,M,,*6A"/> -->
+   <!-- # 화성 대회 장소--> 
+ 	 <!-- <param name="nmea_gga" value="$GPGGA,053319.859,3714.347,N,12646.384,E,1,12,1.0,0.0,M,0.0,M,,*6E"/> --> 
+  <!-- </node> -->
+
+  <node pkg="ntrip_ros" type="ntripclient.py" name="ntrip_ros" output="screen"> -->
+ 	 <param name="rtcm_topic" value="/ublox_gps/rtcm"/>
+ 	 <param name="ntrip_server" value="www.gnssdata.or.kr:2101"/>
+ 	 <param name="ntrip_user" value="thflgg133@naver.com"/>
+ 	 <param name="ntrip_pass" value="gnss"/>
+ 	 <param name="ntrip_stream" value="DANJ-RTCM32"/>
+
+   <!-- # 학교 -->
+   <param name="nmea_gga" value="$GPGGA,052413.415,3646.348,N,12655.888,E,1,12,1.0,0.0,M,0.0,M,,*6A"/>
+   <!-- # 화성 대회 장소-->
+ 	 <!-- <param name="nmea_gga" value="$GPGGA,053319.859,3714.347,N,12646.384,E,1,12,1.0,0.0,M,0.0,M,,*6E"/> --> 
+  </node>
+  
+  <node  name="xsens_mti_node" pkg="xsens_mti_driver" type="xsens_mti_node" output="screen">
+          <rosparam command="load" file="$(find xsens_mti_driver)/param/xsens_mti_node.yaml" />
+  </node>
+
+
+  
+
+</launch>
