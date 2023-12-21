@@ -1,5 +1,7 @@
 # ERP42
 [무인모빌리티부문] 2023 대학생 창작 모빌리티 경진대회
+![KakaoTalk_20231222_010529296](https://github.com/Team-Mutagenesis/ERP42/assets/82595288/6d1a9a84-d673-45ec-863f-3edfbaecf406)
+![KakaoTalk_20231222_010529296_01](https://github.com/Team-Mutagenesis/ERP42/assets/82595288/afc5b37d-898e-43ff-819d-2953737c6356)
 
 <br/>
 
