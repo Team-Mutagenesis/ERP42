@@ -11,10 +11,13 @@
 <br/>
 <br/>
 
-# Commands
-
-Default Path = ~/<your_path>
-
+# Member
+1. SON MIN KI
+2. Moon Ha Neul
+3. Park Hero
+4. Song Dong Hyeun
+5. Lee Gang Hyeun
+   
 <br/>
 
 ## Sensor Setting
