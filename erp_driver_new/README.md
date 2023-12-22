@@ -1,10 +1,15 @@
 # ERP42 driver
 
-2.다운로드 받은 erp42_ws 폴더로 이동합니다.
+<br/>
+
+1.erp42_ws 폴더로 이동.
 
 ```
 cd erp42_ws
 ```
+
+<br/>
+
 터미널에 다음과 같이 입력하여, 원클릭 셋팅 파일의 권한을 열어줍니다.
 sudo chmod 777 permission.bash
 터미널에 다음(password for $USER:)과 같이 출력되면 패스워드를 입력합니다.
