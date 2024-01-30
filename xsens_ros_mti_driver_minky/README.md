@@ -1,14 +1,14 @@
 =[ Xsens MTi driver for ROS ]============================================================
 
-### Documentation:
+Documentation:
     You can find the full documentation in "<your MT SDK directory>/doc/xsensdeviceapi/doc/html/index.html" under "ROS MTi driver" section.
 
-### Prerequisites:
+Prerequisites:
     - ROS Kinetic or Melodic
     - C/C++ Compiler: GCC 5.4.0 or MSVC 14.0
     - C++11
 
-### Building:
+Building:
     - Copy xsens_ros_mti_driver folder from your MT SDK directory into your catkin workspace 'src' folder.
         Make sure the permissions are set to o+rw on your files and directories.
 
@@ -21,7 +21,7 @@
     - Source workspace:
         $ source devel/setup.bash
 
-### Running:
+Running:
     - Configure your MTi device to output desired data (e.g. for display example - orientation output)
 
     - Launch the Xsens MTi driver from your catkin workspace:
@@ -49,7 +49,7 @@
             $ roslaunch xsens_mti_driver display.launch
 
 
-### Notes:
+Notes:
     - ROS timestamps
         The data messages from devices are time stamped on arrival in the ROS driver.
         When collecting data at higher rates, eg 100 Hz, the times between reads can differ from the configured output rate in the device.
